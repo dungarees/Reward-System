@@ -2,5 +2,9 @@
   "Alex": {
     "grade": 12,
     "points": 23
+  },
+  "Alan": {
+    "grade": 12,
+    "points": 69
   }
 }
