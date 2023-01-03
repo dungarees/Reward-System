@@ -41,12 +41,11 @@ def get_student_prizes(student,allStudents):
         return("Student does not exist")
     else:
         for prize in prizes: #Loops through all prizes in Prizes.json
-            if int(allStudents[student]["points"]) >= int(prizes[prize]["points"]) and int(prizes[prize]["points"]) >= student_prize_cost: #Makes sure that the student has enough points and makes sure the student gets only one prize with the amount of points they have.
+            if int(allStudents[student]["points"]) >= prizes[prize]["points"] and prizes[prize]["points"] >= student_prize_cost: #Makes sure that the student has enough points and makes sure the student gets only one prize with the amount of points they have.
                 student_prize_cost = prizes[prize]["points"] #Sets the variable to how many points the previous prize was, so that the prizes can not be lower than the prize they should have, which is checked with the line above
                 student_prize = prize  #Sets the students prize to the prize that they won with the amount of points they have
-                return(student_prize) #Returns prize
+        return(student_prize) #Returns prize
 #update_student_points("Alex",23,allStudents)
 #get_random_student_in_grade(12,allStudents)
 #get_student_prizes("Alex",allStudents)
 #get_student_points("Alex",allStudents)
-print(get_student_prizes("Alex",allStudents))
