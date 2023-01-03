@@ -45,7 +45,7 @@ def get_student_prizes(student,allStudents):
                 student_prize_cost = prizes[prize]["points"] #Sets the variable to how many points the previous prize was, so that the prizes can not be lower than the prize they should have, which is checked with the line above
                 student_prize = prize  #Sets the students prize to the prize that they won with the amount of points they have
         return(student_prize) #Returns prize
-#update_student_points("Alex",23,allStudents)
-#get_random_student_in_grade(12,allStudents)
+#update_student_points("Alex","23",allStudents)
+#get_random_student_in_grade("12",allStudents)
 #get_student_prizes("Alex",allStudents)
 #get_student_points("Alex",allStudents)

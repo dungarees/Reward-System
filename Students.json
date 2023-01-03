@@ -1,10 +1,10 @@
 {
   "Alex": {
-    "grade": 12,
+    "grade": "12",
     "points": "63"
   },
   "Alan": {
-    "grade": 12,
+    "grade": "12",
     "points": "1"
   }
 }
